@@ -1,0 +1,21 @@
+# Ignore folders
+video/
+audio/
+temp/
+model_result/
+tested/
+azure_env/
+video_extractors/
+__pycache__/
+vocatio_before_class/
+Jocke/
+pawel/
+Emilio/
+testing/
+# Ignore files
+id_ed25519
+id_ed25519.pub
+
+transcriptions.json
+transcriptions.json
+data/transcriptions.json

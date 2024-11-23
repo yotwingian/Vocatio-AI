@@ -1,0 +1,11 @@
+ffmpeg
+whisper
+pynote
+
+
+
+
+
+
+
+
