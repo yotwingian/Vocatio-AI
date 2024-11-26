@@ -1,6 +1,9 @@
 ffmpeg
 whisper
-pynote
+pyannote.audio
+streamlit
+openai==0.28.0
+yt_dlp
 
 
 
