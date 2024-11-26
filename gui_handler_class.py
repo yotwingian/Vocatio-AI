@@ -17,6 +17,12 @@ class GUIHandler:
 
    def __init__(self, st, email_handler = None):
 
+      if not GUIHandler.SMTP_EMAIL_USER:
+         print("Email address not found! Please set your SMTP_EMAIL_USER environment variable.")
+
+      if not GUIHandler.SMTP_EMAIL_PASSWORD:
+         print("Email password not found! Please set your SMTP_EMAIL_PASSWORD environment variable.")
+
       self.st = st
 
       self.main_handler = MainHandler(self.st)

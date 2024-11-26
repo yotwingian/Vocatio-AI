@@ -12,7 +12,10 @@ class GPTHandler:
    OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 
    def __init__(self):
-        
+
+      if not GPTHandler.OPENAI_API_KEY:
+         print("Openai API key not found! Please set your OPENAI_API_KEY environment variable.") 
+
       self.api_key = GPTHandler.OPENAI_API_KEY
       openai.api_key = self.api_key
       self.openai = openai

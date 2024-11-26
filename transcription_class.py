@@ -10,7 +10,7 @@ from fileoperation_class import FileOperation
 class Transcription:
 
    # Here the variable "AUTH_TOKEN_VOCATIO" should contain the token that 
-   # you have recieved for the whisper model from hugging face (as "..." 
+   # you have recieved for the diarization model from hugging face (as "..." 
    # which is a long string with letters and numbers) or it is loaded as 
    # envronmental variables in "windows" by using "os.getenv("...")" command.
     AUTH_TOKEN_VOCATIO = os.getenv("AUTH_TOKEN_VOCATIO")
@@ -48,11 +48,13 @@ class Transcription:
 
     def __init__(self, st):
 
+        if not Transcription.AUTH_TOKEN_VOCATIO:
+           print("Authorization token from hugging face not found! Please set your AUTH_TOKEN_VOCATIO environment variable.")
+
         self.st = st
 
         self.vad_pipeline, self.embedding_model, self.diarization_pipeline, self.model = Transcription.load_models()
         self.output_manager = OutputManager(self.st)
-        self.fileoperation = FileOperation()
 
     def transcribe_audio(self, file_path, progress_bar = None):
 
