@@ -44,7 +44,7 @@ pip install -r requirements.txt
 
 - The email password (SMTP_EMAIL_PASSWORD) needs to be set and it is recommended to set this key in the environmental variables.
 
-- You can set a enviromental key like this in windows in your project folder: setx OPENAI_API_KEY ".....key_value......"
+- You can set a environmental key like this in windows in your project folder: setx OPENAI_API_KEY ".....key_value......"
 
 
 ## Running the Program
