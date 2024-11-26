@@ -1,4 +1,4 @@
-# Vocatio Analytics AI
+# Vocatio AI
 
 ## Description
 

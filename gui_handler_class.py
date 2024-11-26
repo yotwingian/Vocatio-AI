@@ -44,7 +44,7 @@ class GUIHandler:
       
    def display_title_and_description(self):
 
-      self.st.title("Vocatio Analytics AI")
+      self.st.title("Vocatio AI")
       self.st.write("Welcome to the Audio Transcription and Diarization App. You can transcribe audio from a file or a YouTube URL.")
 
    def handle_user_options(self):
