@@ -1,4 +1,5 @@
 # Vocatio AI
+(POC, School project, LIA)
 
 ## Description
 
